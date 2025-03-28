@@ -6,21 +6,33 @@ html, body {
 }
 
 p { /* Brødtekst regl */
+    font-family: "Noto Serif SC", serif;
     font-weight: normal;
     font-size: 18px;
 }
 
 h1 { /* Overskrift regl */
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 50px;
 }
 
 h2 { /* Mellemrubrik til brødteskt regl */
+    font-family: "Scada", sans-serif;
     font-weight: bold;
     font-size: 26px;
 }
 
-img {max-width: 100%; max-height: 100%;}
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 20px 60px 20px 60px;
+    border-radius: 10px;
+    background-color: #9300F7;
+    color: white;
+}
+
+img {max-width: 100%; max-height: 100%; border-radius: 10px;}
 svg {max-width: 100%; max-height: 100%;}
 
 /* ----------------- */
@@ -43,7 +55,7 @@ header {
 
 section { /* ALT INDHOLD HAR SAMME BREDTE, ÆNDRE MIG HVIS DU VIL ÆNDRE HELE BREDTEN */
     width: 75%;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -53,16 +65,91 @@ header section div {
 }
 
 #HeroSlideShow {
-    background-image: url(https://media1.tenor.com/m/Ar34YOlC40gAAAAd/fat-turkish-guy-dancing-belly-dance.gif);
-    height: 500px;
+    background-image: url(https://i.pinimg.com/736x/2e/76/2b/2e762ba6722ad27676549ed307f076e6.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 800px;
 }
 
 #DeltagEllerFrivilligSektion {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-
+    align-content: center;
+    margin: auto;
     background-color: #FDFBEF;
-    height: 500px;
+    padding: 10vh 0 10vh 0;
+    width: 100%;
+}
+
+#DeltagEllerFrivilligSektion__Sektioner img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 35%;
+}
+
+#DeltagEllerFrivilligSektion section {
     display: flex;
     flex-direction: column;
+}
+
+
+#DeltagEllerFrivilligSektion__Sektioner {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+}
+
+#DeltagEllerFrivilligSektion__Sektioner div {
+    flex: 1;
+    background-color: orange;
+    color: white;
+    border-radius: 2vh;
+    padding: 4vh 2vh 4vh 2vh;
+}
+
+#HistorieFraFrivilligSektion {
+    padding: 10vh 0 10vh 0;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+}
+
+#HistorieFraFrivilligSektion section div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#HistorieFraFrivilligSektion section > div:nth-child(2) {
+    padding-left: 5vh;
+}
+
+#OmVentilenSektion {
+    width: 100%;
+    background-color: #E45B26;
+    color: white;
+    padding: 10vh 0 10vh 0;
+}
+
+#OmVentilenSektion section {
+    display: flex;
+    flex-direction: column;
+}
+
+#OmVentilenSektion button {
+    width: 30%;
+}
+
+#OmVentilenSektion__Image {
+    background-image: url(https://preview.redd.it/a-bunch-of-adorable-baby-animal-pictures-found-on-google-v0-mpkrjs2y5kt81.jpg?width=640&crop=smart&auto=webp&s=612e754d90ba701148b3224fbedc63d7e6700cff);
+    background-size: cover;
+    background-position: 0% 25%;
+    height: 400px;
+    border-radius: 10px;
 }
