@@ -64,11 +64,45 @@
     function robotAnswer() {
 
         if (document.getElementById('chatbox__writeinput').value.includes('Hej')) {
+            setTimeout(() => {
+                addMessageRobot('Hej du')
+                scrollToBottom();
+            }, "1000");
+
+
+            setTimeout(() => {
+                addMessageRobot('<img src="https://media2.giphy.com/media/JFz7YZA0vhiGlAYCSn/giphy.gif?cid=6c09b952au32ejvfxre3kszw9tkv0aj7i8gnnvc24uaimrua&ep=v1_gifs_search&rid=giphy.gif&ct=g">')
+                scrollToBottom();  
+            }, "3000");
+
+            setTimeout(() => {
+                scrollToBottom();  
+            }, "4000");
+        }
+
+        else if (document.getElementById('chatbox__writeinput').value.includes('frivillig') || document.getElementById('chatbox__writeinput').value.includes('Frivillig')) {
             document.getElementById('chatbox__writeinput').value = '';
 
             setTimeout(() => {
-                addMessageRobot('Hej du')
+                addMessageRobot('Ja self!')
             }, "1000");
+            scrollToBottom();
+
+            setTimeout(() => {
+                addMessageRobot('> Her er linket <')
+            }, "3000");
+            scrollToBottom();
+        }
+
+        else if (document.getElementById('chatbox__writeinput').value.includes('tak') || document.getElementById('chatbox__writeinput').value.includes('Tak')) {
+            setTimeout(() => {
+                addMessageRobot('Altid, snuske')
+            }, "1000");
+            scrollToBottom();
+
+            setTimeout(() => {
+                addMessageRobot('Noget andet jeg kan gøre?')
+            }, "3000");
             scrollToBottom();
         }
       
@@ -80,6 +114,8 @@
             }, "1000");
 
         }
+
+        document.getElementById('chatbox__writeinput').value = '';
     }
 
     function clearMessages() {
