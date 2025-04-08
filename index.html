@@ -110,20 +110,17 @@
     </div>
 
     <div id="chatbox">
-        <img src="images/chatsvg.svg" id="chatbox__chaticon" onclick="openup()">
+        <img src="images/chatsvg.svg" id="chatbox__chaticon" onclick="openUp()">
         <div id="chatbox__closeandlogo">
-            <a onclick="openup()">x</a>
+            <a onclick="openUp()">X</a>
             <img src="images/ventilenisoleret.svg">
         </div>
         <div id="chatbox__messagesection">
-            <div id="chatbox__messagerobot">
-                <p>Hej, mit navn er Sander! 🤖</p>
-            </div>
-            <br>
+
         </div>
         <div id="chatbox__write">
             <input id="chatbox__writeinput" placeholder="Skriv her... (pst man kan kun skrive 'Hej')" value="">
-            <button onclick="sendbesked()">Send</button>
+            <button onclick="addMessageYou()">Send</button>
         </div>
     </div>
 

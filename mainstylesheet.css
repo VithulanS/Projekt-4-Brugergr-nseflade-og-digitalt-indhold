@@ -51,6 +51,7 @@ svg {
 
 /* Slet mig senere */
 * {
+    transition: all cubic-bezier(.81, .15, .47, 1.57) .5s;
     border: 1px dotted rgb(255, 0, 255, 1);
 }
 
@@ -187,13 +188,15 @@ header section div {
     flex-direction: column;
     text-align: center;
     transition: all cubic-bezier(.81, .15, .47, 1.57) .5s;
+    border: 1px solid gainsboro;
 }
 
 
 #chatbox.chatbox__udvidet {
+    border: 5px solid black;
     padding: 5vh;
-    width: 40vh;
-    height: 50vh;
+    width: 80vh;
+    height: 60vh;
 }
 
 #chatbox div {
@@ -214,12 +217,14 @@ header section div {
 }
 
 #chatbox__closeandlogo {
+    height: 10vh;
     display: none;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
 #chatbox__write {
+    height: 5vh;
     display: flex;
     flex-direction: row;
 }
@@ -248,10 +253,15 @@ header section div {
 }
 
 #chatbox__messagesection {
-    margin-bottom: 50px;
-    height: 25vh;
+    flex: 50%;
+    width: 100%;
+    margin-bottom: 20px;
     overflow-y: scroll;
+    overflow-x: hidden;
     flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 #chatbox__messagesection::-webkit-scrollbar {
@@ -261,25 +271,54 @@ header section div {
     /* Remove scrollbar height */
 }
 
-#chatbox__messagerobot {
+.chatbox__messagerobot {
+    margin-right: 20px;
+    border-radius: 1.5vh;
+    animation: messagebox 0.5s 1 cubic-bezier(.97,0,.83,.67);
+    display: flex;
+    justify-content: flex-start;
+    text-align: right !important;
     background-color: #E45B26;
-    color: white;
-    border-radius: 1vh;
-    padding-left: 2vh;
     padding-right: 2vh;
+    padding-left: 2vh;
+    margin-bottom: 20px;
+    color: white;
+    width: 93%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
-#chatbox__messageyou {
+.chatbox__messageyou {
+    border-radius: 1.5vh;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: flex-end;
     text-align: right !important;
-    background-color: rgb(0, 0, 0, 0);
-    border: 2px solid #E45B26;
-    border-radius: 1vh;
-    color: #E45B26;
-    padding-left: 2vh;
+    background-color: #9300F7;
+    padding-top: 2vh;
     padding-right: 2vh;
+    padding-left: 2vh;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 93%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
+
+.chatbox__messageyou span {
+    margin-bottom: -20px;
+    opacity: 75%;
+}
+
+
+@keyframes messagebox {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
 
 /* Her begynder footer styling */
 
