@@ -1,23 +1,27 @@
 /* Kommentar */
 /* Style Style REGLER */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
-p { /* Brødtekst regl */
+p {
+    /* Brødtekst regl */
     font-family: "Noto Serif SC", serif;
     font-weight: normal;
     font-size: 18px;
 }
 
-h1 { /* Overskrift regl */
+h1 {
+    /* Overskrift regl */
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 50px;
 }
 
-h2 { /* Mellemrubrik til brødteskt regl */
+h2 {
+    /* Mellemrubrik til brødteskt regl */
     font-family: "Scada", sans-serif;
     font-weight: bold;
     font-size: 26px;
@@ -32,19 +36,33 @@ button {
     color: white;
 }
 
-img {max-width: 100%; max-height: 100%; border-radius: 10px;}
-svg {max-width: 100%; max-height: 100%;}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+svg {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /* ----------------- */
 
 /* Slet mig senere */
-* {border: 1px dotted rgb(255, 0, 255, 1);}
-section {border: 1px dotted rgb(0, 155, 0, 1);}
+* {
+    border: 1px dotted rgb(255, 0, 255, 1);
+}
+
+section {
+    border: 1px dotted rgb(0, 155, 0, 1);
+}
+
 /* Slet mig senere */
 
 header {
     z-index: 9999;
-    filter: drop-shadow(0px 5px 10px rgb(0,0,0,0.5));
+    filter: drop-shadow(0px 5px 10px rgb(0, 0, 0, 0.5));
     background-color: white;
     height: 100px;
     width: 100%;
@@ -53,7 +71,8 @@ header {
 
 }
 
-section { /* ALT INDHOLD HAR SAMME BREDTE, ÆNDRE MIG HVIS DU VIL ÆNDRE HELE BREDTEN */
+section {
+    /* ALT INDHOLD HAR SAMME BREDTE, ÆNDRE MIG HVIS DU VIL ÆNDRE HELE BREDTEN */
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -83,7 +102,7 @@ header section div {
     width: 100%;
 }
 
-#DeltagEllerFrivilligSektion__Sektioner img{
+#DeltagEllerFrivilligSektion__Sektioner img {
     height: 300px;
     width: 100%;
     object-fit: cover;
@@ -126,7 +145,7 @@ header section div {
     flex: 1;
 }
 
-#HistorieFraFrivilligSektion section > div:nth-child(2) {
+#HistorieFraFrivilligSektion section>div:nth-child(2) {
     padding-left: 5vh;
 }
 
@@ -156,9 +175,9 @@ header section div {
 
 /* Chat box... */
 #chatbox {
-    padding: 10vh;
-    width: 10vh;
-    height: 10vh;
+    padding: .5vh;
+    width: 8vh;
+    height: 8vh;
     background-color: white;
     border-radius: 10vh 10vh 0vh 10vh;
     position: fixed;
@@ -167,33 +186,37 @@ header section div {
     display: flex;
     flex-direction: column;
     text-align: center;
-    transition: all cubic-bezier(.81,.15,.47,1.57) .5s;
+    transition: all cubic-bezier(.81, .15, .47, 1.57) .5s;
 }
 
 
 #chatbox.chatbox__udvidet {
+    padding: 5vh;
     width: 40vh;
-    height: 40vh;
-  }
+    height: 50vh;
+}
 
 #chatbox div {
+    transform: scale(0);
     display: none;
 }
 
-#chatbox.chatbox__udvidet  div{
+#chatbox.chatbox__udvidet div {
+    transform: scale(1);
     display: flex;
-  }
-  
+}
 
 #chatbox__chaticon {
     max-width: 50%;
     max-height: 50%;
     margin: auto;
+    display: flex;
 }
 
 #chatbox__closeandlogo {
     display: none;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 #chatbox__write {
@@ -225,37 +248,49 @@ header section div {
 }
 
 #chatbox__messagesection {
+    margin-bottom: 50px;
     height: 25vh;
     overflow-y: scroll;
     flex-direction: column;
+}
+
+#chatbox__messagesection::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar width */
+    height: 0;
+    /* Remove scrollbar height */
 }
 
 #chatbox__messagerobot {
     background-color: #E45B26;
     color: white;
     border-radius: 1vh;
-    padding-left: 1vh;
-    padding-right: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 #chatbox__messageyou {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right !important;
     background-color: rgb(0, 0, 0, 0);
     border: 2px solid #E45B26;
     border-radius: 1vh;
     color: #E45B26;
-    padding-left: 1vh;
-    padding-right: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
-
 
 /* Her begynder footer styling */
 
 
 .footer-container {
-    display: flex;  
-    justify-content: flex-end; /* Gør kolonnerne jævnt fordelt */
+    display: flex;
+    justify-content: flex-end;
+    /* Gør kolonnerne jævnt fordelt */
     flex-direction: row;
-    margin: 0 auto; /* Centrerer footeren */
+    margin: 0 auto;
+    /* Centrerer footeren */
     padding: 20px;
     margin-top: 20px;
 }
@@ -263,13 +298,16 @@ header section div {
 
 .footer-right {
     display: flex;
-    gap: 50px; /* Justér afstanden mellem kolonnerne */
-    margin-left: auto; /*Får kolonnerne til at være i højre side af footer */
+    gap: 50px;
+    /* Justér afstanden mellem kolonnerne */
+    margin-left: auto;
+    /*Får kolonnerne til at være i højre side af footer */
 }
 
 .footer-column {
-    flex: 1; /* Sørger for at kolonnerne fylder lige meget */
-     /* Forhindrer at de bliver for smalle */
+    flex: 1;
+    /* Sørger for at kolonnerne fylder lige meget */
+    /* Forhindrer at de bliver for smalle */
 }
 
 .footer-column p {
@@ -280,7 +318,8 @@ header section div {
 
 @media (max-width: 900px) {
     .footer-container {
-        flex-direction: column; /* Skift til kolonne på mindre skærme */
+        flex-direction: column;
+        /* Skift til kolonne på mindre skærme */
         text-align: center;
     }
 
@@ -290,11 +329,14 @@ header section div {
     }
 
     .footer-right {
-        flex-direction: column; /* Sæt elementerne under hinanden */
-        gap: 20px; /* Reducér mellemrum */
+        flex-direction: column;
+        /* Sæt elementerne under hinanden */
+        gap: 20px;
+        /* Reducér mellemrum */
     }
 
     .footer-column {
-        text-align: center; /* Justere tekst til højre */ 
+        text-align: center;
+        /* Justere tekst til højre */
     }
 }
