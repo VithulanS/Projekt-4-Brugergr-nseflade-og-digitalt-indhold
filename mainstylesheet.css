@@ -164,3 +164,55 @@ header section div {
     right: 0;
     bottom: 0;
 }
+
+
+/* Her begynder footer styling */
+
+
+.footer-container {
+    display: flex;  
+    justify-content: flex-end; /* Gør kolonnerne jævnt fordelt */
+    flex-direction: row;
+    margin: 0 auto; /* Centrerer footeren */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.footer-right {
+    display: flex;
+    gap: 50px; /* Justér afstanden mellem kolonnerne */
+    margin-left: auto; /*Får kolonnerne til at være i højre side af footer */
+}
+
+.footer-column {
+    flex: 1; /* Sørger for at kolonnerne fylder lige meget */
+     /* Forhindrer at de bliver for smalle */
+}
+
+.footer-column p {
+    margin: 2px 0;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column; /* Skift til kolonne på mindre skærme */
+        text-align: center;
+    }
+
+    .footer-column.left {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-right {
+        flex-direction: column; /* Sæt elementerne under hinanden */
+        gap: 20px; /* Reducér mellemrum */
+    }
+
+    .footer-column {
+        text-align: center; /* Justere tekst til højre */ 
+    }
+}
