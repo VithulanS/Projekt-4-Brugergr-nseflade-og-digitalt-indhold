@@ -119,8 +119,10 @@
 
         </div>
         <div id="chatbox__write">
-            <input id="chatbox__writeinput" placeholder="Skriv her..." value="">
-            <button onclick="addMessageYou()">Send</button>
+            <form onsubmit="addMessageYou(event)">
+                <input type="text" id="chatbox__writeinput" placeholder="Skriv her..." />
+                <button type="submit">Send</button>
+              </form>              
         </div>
     </div>
 

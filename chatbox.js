@@ -3,11 +3,15 @@
     const closeandlogo = document.getElementById('chatbox__closeandlogo');
     const messagesection = document.getElementById('chatbox__messagesection');
 
-    function addMessageYou() {
+
+    
+    /* appendChild: for når man selv skriver noget */
+    function addMessageYou(event) {
+        event.preventDefault(); // ✅ Prevent form reload
         let input = document.getElementById('chatbox__writeinput').value;
 
 
-        if (input.length > 0) {
+        if (input.length > 0) {  /* dit input skal være mindre end 0 tal */
             const messageDiv = document.createElement('div');
             const pTag = document.createElement('p');
             const Span = document.createElement('span')
@@ -28,6 +32,7 @@
 
     }
 
+    /* appendChild for robotten */
     function addMessageRobot(text) {
         const messageDivRobot = document.createElement('div');
         messageDivRobot.classList.add('chatbox__messagerobot')
@@ -58,8 +63,9 @@
 
         messageDivRobot.appendChild(pTagForRobot);
         messagesection.appendChild(messageDivRobot);
-        scrollToBottom();
     }
+
+    /* Checkliste for roboten, den tjekker: document.getElementById('chatbox__writeinput').value */
 
     function robotAnswer() {
 
@@ -72,24 +78,24 @@
 
             setTimeout(() => {
                 addMessageRobot('<img src="https://media2.giphy.com/media/JFz7YZA0vhiGlAYCSn/giphy.gif?cid=6c09b952au32ejvfxre3kszw9tkv0aj7i8gnnvc24uaimrua&ep=v1_gifs_search&rid=giphy.gif&ct=g">')
-                scrollToBottom();  
+                setTimeout(() => {
+                    scrollToBottom();  
+                }, "1000");
             }, "3000");
 
-            setTimeout(() => {
-                scrollToBottom();  
-            }, "4000");
+
         }
 
-        else if (document.getElementById('chatbox__writeinput').value.includes('frivillig') || document.getElementById('chatbox__writeinput').value.includes('Frivillig')) {
+        else if (document.getElementById('chatbox__writeinput').value.includes('frivillig') || document.getElementById('chatbox__writeinput').value.includes('Frivillig') || document.getElementById('chatbox__writeinput').value.includes('ensom') || document.getElementById('chatbox__writeinput').value.includes('Ensom')) {
             document.getElementById('chatbox__writeinput').value = '';
 
             setTimeout(() => {
-                addMessageRobot('Ja self!')
+                addMessageRobot('Øjeblik...')
             }, "1000");
             scrollToBottom();
 
             setTimeout(() => {
-                addMessageRobot('> Her er linket <')
+                addMessageRobot('<b> > Her er et link < </b>')
             }, "3000");
             scrollToBottom();
         }
@@ -118,15 +124,51 @@
         document.getElementById('chatbox__writeinput').value = '';
     }
 
+    /* appendChild for FAQs */
+
+    function addMessageFAQ(text) {
+        const messageDivFAQ = document.createElement('div');
+        messageDivFAQ.classList.add('chatbox__messagefaq')
+        const pTagForFAQ = document.createElement('p')
+        pTagForFAQ.innerHTML = text;
+        messageDivFAQ.appendChild(pTagForFAQ);
+        messagesection.appendChild(messageDivFAQ);
+    }
+
+    /* Fjerner alt inde i min messagesection div*/
+    
     function clearMessages() {
         messagesection.innerHTML = '';
     }
+
+    /* Array for spørgsmål og emner */
+
+    const FAQs = [
+        { question: 'Frivillig' },
+        { question: 'Ensomhed' },
+    ];    
+    
+    
+    /* Når man åbner chatten */
 
     function openUp() {
         chatbox.classList.toggle('chatbox__udvidet');
         closeandlogo.classList.toggle('chatboxdisplay');
         clearMessages()
         addMessageRobot('Hejsa. Mit navn er Sander!')
+        
+
+        setTimeout(() => {
+        for (i = 0; i < FAQs.length; i++) {
+
+            addMessageFAQ('Emne: ' + FAQs[i].question)
+
+        }
+    }, "2000");
+
+
+
+
 
         if (chaticon.style.display === 'flex' || window.getComputedStyle(chaticon).display === 'flex') {
             chaticon.style.display = 'none'; // Hide chaticon
@@ -138,6 +180,7 @@
 
     }
 
+    /* function der kører til bunden af højden på vinduet */
 
     function scrollToBottom() {
         messagesection.scrollTop = messagesection.scrollHeight;
@@ -145,6 +188,12 @@
 
 
 
+
+
+
+
+
+    /* Gammel kode, burde fjernes men det viser noget historie */
 
     /*
 
