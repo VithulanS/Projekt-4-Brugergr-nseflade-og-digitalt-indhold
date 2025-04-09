@@ -1,0 +1,29 @@
+    <div>
+        <section>
+            <h1>Nyheder & Personlige Historier</h1>
+            <p>Hold dig opdateret med de nyeste historier fra unge, der har fundet fællesskab gennem Ventilen, og læs om
+                kommende events og initiativer.</p>
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <h1>Ensomhed blandt unge – De vigtige tal</h1>
+            <p>Ensomhed er mere udbredt, end mange tror. Alt for mange unge føler sig alene, men du er ikke den eneste –
+                og der findes et fællesskab for dig.
+
+                [X]% af unge i Danmark føler sig ensomme
+                [X]% savner et sted at høre til
+                [X]% ved ikke, hvor de kan få støtte
+
+                Ventilen arbejder for at ændre disse tal
+                – et trygt fællesskab ad gangen.</p>
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <h1>Vores lokationer</h1>
+            <p>Fyn osv.</p>
+        </section>
+    </div>
