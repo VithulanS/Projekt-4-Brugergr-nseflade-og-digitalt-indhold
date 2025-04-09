@@ -334,13 +334,16 @@ header section div {
     100% {transform: scale(1);}
 }
 
+* {border: 1px dotted #9300F7;}
+section {border: 2px solid green;}
+
 
 /* Her begynder footer styling */
 
 
 .footer-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     /* Gør kolonnerne jævnt fordelt */
     flex-direction: row;
     margin: 0 auto;
@@ -351,6 +354,7 @@ header section div {
 
 
 .footer-right {
+    flex: 1;
     display: flex;
     gap: 50px;
     /* Justér afstanden mellem kolonnerne */
