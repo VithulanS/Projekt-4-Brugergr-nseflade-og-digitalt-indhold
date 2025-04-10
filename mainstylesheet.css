@@ -77,8 +77,8 @@ header section div {
 }
 
 #HeroSlideShow {
-    background-image: url(https://i.pinimg.com/736x/2e/76/2b/2e762ba6722ad27676549ed307f076e6.jpg);
-    background-size: contain;
+    background-image: url(images/Ventilen-6041-scaled.webp);
+    background-size: cover;
     background-position: center;
     height: 800px;
 }
@@ -96,7 +96,7 @@ header section div {
 }
 
 #DeltagEllerFrivilligSektion__Sektioner img {
-    height: 300px;
+    height: 350px;
     width: 100%;
     object-fit: cover;
     object-position: 0% 35%;
@@ -159,7 +159,7 @@ header section div {
 }
 
 #OmVentilenSektion__Image {
-    background-image: url(https://preview.redd.it/a-bunch-of-adorable-baby-animal-pictures-found-on-google-v0-mpkrjs2y5kt81.jpg?width=640&crop=smart&auto=webp&s=612e754d90ba701148b3224fbedc63d7e6700cff);
+    background-image: url(images/billederafdeunge.webp);
     background-size: cover;
     background-position: 0% 25%;
     height: 400px;
