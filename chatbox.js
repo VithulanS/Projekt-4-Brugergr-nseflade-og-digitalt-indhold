@@ -155,7 +155,7 @@
         chatbox.classList.toggle('chatbox__udvidet');
         closeandlogo.classList.toggle('chatboxdisplay');
         clearMessages()
-        addMessageRobot('Hejsa. Mit navn er Sander!')
+        addMessageRobot('Hejsa. Mit navn er Jaxy!')
         
 
         setTimeout(() => {
