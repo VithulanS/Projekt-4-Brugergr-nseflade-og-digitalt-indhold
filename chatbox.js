@@ -3,11 +3,11 @@
     const closeandlogo = document.getElementById('chatbox__closeandlogo');
     const messagesection = document.getElementById('chatbox__messagesection');
 
-
     
     /* appendChild: for når man selv skriver noget */
     function addMessageYou(event) {
         event.preventDefault(); // ✅ Prevent form reload
+       
         let input = document.getElementById('chatbox__writeinput').value;
 
 
