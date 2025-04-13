@@ -50,6 +50,114 @@ svg {
 /* ----------------- */
 
 
+/* Ilyas start DON'T TOUCH*/
+.ilyasbody {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+  }
+  
+  .ilyasnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+    padding: 10px 0;
+  }
+  
+  .ilyasnav__logo img {
+    height: 40px;
+    margin-right: 30px;
+  }
+  
+  .ilyasnav__menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ilyasnav__item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .ilyasnav__item:hover {
+    color: #000000;
+  }
+  
+  .ilyasdropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+  
+  .ilyasnav__item:hover .ilyasdropdown,
+  .ilyasdropdown:hover {
+    display: block;
+  }
+  
+  .ilyasdropdown__item {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+  }
+  
+
+  .ilyasdropdown__item.highlight {
+    background-color: #fff481; 
+    color: #000000; 
+  }
+  
+  .ilyasdropdown__item:hover {
+    background-color: #eef9ff;
+  }
+  
+  .ilyasdropdown__img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .ilyasdropdown__img:hover {
+    transform: scale(1.1);
+  }
+  
+  .ilyasnav__search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .ilyasmessageBox {
+    text-align: center;
+    padding: 10px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  
+/* Ilyas slut */
+
 
 /* Slet mig senere */
 

@@ -3,6 +3,7 @@
 
 <head>
     <script defer src="chatbox.js"></script>
+    <script src="ilyas.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ventilen Forside Bogorm</title>
@@ -15,13 +16,40 @@
 </head>
 
 <body>
-    <header>
-        <section>
-            <div><img src="images/Header_Logo.svg"></div>
-            <div>nav</div>
+<!--Ilyas Start DON'T TOUCH-->
+<header>
+    <section>
+        <nav class="ilyasnav">
+            <div class="ilyasnav__logo">
+              <img src="images/logo.png" alt="Logo">
             </div>
-        </section>
-    </header>
+            <ul class="ilyasnav__menu">
+              <li class="ilyasnav__item ilyasnav__dropdown">Er du ensom?
+                <ul class="ilyasdropdown ilyasdropdown--ensom"></ul>
+              </li>
+              <li class="ilyasnav__item ilyasnav__dropdown">Støt os
+                <ul class="ilyasdropdown ilyasdropdown--stot"></ul>
+              </li>
+              <li class="ilyasnav__item ilyasnav__dropdown">Ressourcer
+                <ul class="ilyasdropdown ilyasdropdown--ressourcer"></ul>
+              </li>
+              <li class="ilyasnav__item ilyasnav__dropdown">Bliv frivillig
+                <ul class="ilyasdropdown ilyasdropdown--frivillig"></ul>
+              </li>
+            </ul>
+            <div class="ilyasnav__search">
+              <input type="text" id="ilyassearchInput" placeholder="Søg...">
+              <button id="ilyassearchBtn">Søg</button>
+            </div>
+          </nav>
+        
+          <div id="ilyasmessageBox" class="ilyasmessageBox"></div>
+          
+          <script src="ilyasuno.js"></script>
+
+    </section>
+</header>
+<!--Ilyas Slut-->
 
     <div id="HeroSlideShow">
         <section>
