@@ -581,59 +581,54 @@ header section div {
 }
 
 
-/* Her begynder footer styling */
+    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+    .flip-box-container {
+        justify-content: center;
+        display: flex;
+        gap: 20px; /* Afstand mellem kasserne */
 
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    /* Gør kolonnerne jævnt fordelt */
-    flex-direction: row;
-    margin: 0 auto;
-    /* Centrerer footeren */
-    padding: 20px;
-    margin-top: 20px;
-}
-
-
-.footer-right {
-    flex: 1;
-    display: flex;
-    gap: 50px;
-    /* Justér afstanden mellem kolonnerne */
-    margin-left: auto;
-    /*Får kolonnerne til at være i højre side af footer */
-}
-
-.footer-column {
-    flex: 1;
-    /* Sørger for at kolonnerne fylder lige meget */
-    /* Forhindrer at de bliver for smalle */
-}
-
-.footer-column p {
-    margin: 2px 0;
-    line-height: 1.5;
-}
-
-/* Vithu start */
+    }.flip-box {
+        background-color: transparent;
+        width: 300px;
+        height: 450px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        overflow: hidden;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
     .flip-box:hover .flip-box-inner {
         transform: rotateY(180deg);
     } 
-
+    
+    /* Position the front and back side */
     .flip-box-front, .flip-box-back {
         position: absolute;
         width: 100%;
         height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
     }
-
-
+    
+    /* Style the front side */
     .flip-box-front {
-        background-color: orange;
-
+        background-color: #c8b5b5;
+        color: black;
     }
-
+    
+    /* Style the back side */
     .flip-box-back {
         background-color: #EA610F;
         color: white;
@@ -666,8 +661,9 @@ header section div {
         font-size: 20px;
         transition: transform 0.5s;
     }
+    /* Prikker (dots) */
+   
 
-/* Vithu slut */
 
 
 @media (max-width: 900px) {
