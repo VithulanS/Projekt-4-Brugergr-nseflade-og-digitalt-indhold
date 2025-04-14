@@ -319,7 +319,7 @@ header section div {
     text-align: center;
     transition: all cubic-bezier(.81, .15, .47, 1.57) .5s;
     border: 1px solid gainsboro;
-    cursor: pointer;
+    
 }
 
 
@@ -345,6 +345,7 @@ header section div {
     max-height: 50%;
     margin: auto;
     display: flex;
+    cursor: pointer;
 }
 
 #chatbox__closeandlogo {
@@ -381,6 +382,7 @@ header section div {
     width: 25%;
     flex: 25%;
     border-radius: 0vh 1vh 1vh 0vh;
+    cursor: pointer;
 }
 
 #chatbox__write form {
