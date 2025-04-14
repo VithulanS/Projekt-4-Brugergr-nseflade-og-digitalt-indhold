@@ -1,672 +1,836 @@
-/* Kommentar */
-/* Style Style REGLER */
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
+/* Underside */
 
-p {
-    /* Brødtekst regl */
-    font-family: "Noto Serif SC", serif;
-    font-weight: normal;
-    font-size: 18px;
-}
-
-h1 {
-    /* Overskrift regl */
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-}
-
-h2 {
-    /* Mellemrubrik til brødteskt regl */
-    font-family: "Scada", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-}
-
-button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    padding: 20px 60px 20px 60px;
-    border-radius: 10px;
-    background-color: #9300F7;
-    color: white;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-}
-
-svg {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-/* ----------------- */
-
-
-/* Ilyas start DON'T TOUCH*/
-.ilyasbody {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f6f6f6;
+  .HeroSlideShowTwo {
+      background-image: url(images/IMG_6081.webp) !important;
   }
-  
+
+  #DeltagEllerFrivilligSektion {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      margin: auto;
+      background-color: #FDFBEF;
+      padding: 10vh 0 10vh 0;
+      width: 100%;
+  }
+
+  #DeltagEllerFrivilligSektion__Sektioner img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 0% 35%;
+  }
+
+  #DeltagEllerFrivilligSektion section {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .videosektion section {
+      padding: 10vh 0vh 10vh 0;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .videosektion section div {
+      flex: 1;
+  }
+
+  .videosektion__flexbox {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+  }
+
+  .videosektion_video__one {
+      background-image: url(images/video1.png);
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      margin-bottom: 20px;
+  }
+
+  .videosektion_video__two {
+      background-image: url(images/video2.png);
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      margin-bottom: 20px;
+  }
+
+  .frivilligemuligheder {
+      background-color: #FDFBEF;
+  }
+
+  .frivilligemuligheder section {
+      padding: 10vh 0vh 10vh 0vh;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .frivilligemuligheder__flexbox {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+  }
+
+  .frivilligemuligheder section img {
+      width: 100%;
+      height: 500px;
+      max-height: 500px;
+      object-fit: cover;
+      object-position: top;
+  }
+
+  .citatboks {
+      background-color: #96C581;
+      color: white;
+  }
+
+  .citatboks section {
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+      padding: 10vh 0vh 10vh 0vh;
+  }
+
+
+  /* Underside slut */
+
+
+
+  /*Pernille style starter her for FAQ */
+
+  .faq-div {
+      background-color: #FFFFFF;
+  }
+
+  .faq-section {
+      flex-direction: column;
+      padding: 10vh 0vh 10vh 0vh;
+
+  }
+
+  .question {
+      cursor: pointer;
+  }
+
+  .faq-container {
+      background-color: #E45B26;
+      border-radius: 20px;
+      padding: 10px 30px 10px 30px;
+      margin-bottom: 20px;
+      transition: opacity 0.2s ease
+  }
+
+  .faq-container:hover:not(.active) {
+      background: #f6a484;
+      /*farve når musen holdes hen over boksen */
+  }
+
+  .faq-container.active {
+      background-color: #E45B26;
+  }
+
+  .answer {
+      display: none;
+      margin-top: 10px;
+      /*afstand fra tekst og overskrift*/
+      color: #000000;
+      /*farve på paragraph teksten inden i boksen*/
+  }
+
+  /*Pernille style slutter her for FAQ */
+
+  /* Style Style REGLER */
+  html,
+  body {
+      margin: 0;
+      padding: 0;
+  }
+
+  p {
+      /* Brødtekst regl */
+      font-family: "Noto Serif SC", serif;
+      font-weight: normal;
+      font-size: 18px;
+  }
+
+  h1 {
+      /* Overskrift regl */
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 50px;
+  }
+
+  h2 {
+      /* Mellemrubrik til brødteskt regl */
+      font-family: "Scada", sans-serif;
+      font-weight: bold;
+      font-size: 26px;
+  }
+
+  button {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      padding: 20px 60px 20px 60px;
+      border-radius: 10px;
+      background-color: #9300F7;
+      color: white;
+  }
+
+  img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+  }
+
+  svg {
+      max-width: 100%;
+      max-height: 100%;
+  }
+
+  /* ----------------- */
+
+
+  /* Ilyas start DON'T TOUCH*/
+  .ilyasbody {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+  }
+
   .ilyasnav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 10;
-    padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 10;
+      padding: 10px 0;
   }
-  
+
   .ilyasnav__logo img {
-    height: 40px;
-    margin-right: 30px;
+      height: 40px;
+      margin-right: 30px;
   }
-  
+
   .ilyasnav__menu {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
   }
-  
+
   .ilyasnav__item {
-    position: relative;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: color 0.3s ease;
+      position: relative;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: color 0.3s ease;
   }
-  
+
   .ilyasnav__item:hover {
-    color: #000000;
+      color: #000000;
   }
-  
+
   .ilyasdropdown {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    min-width: 200px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 100;
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      min-width: 200px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      z-index: 100;
   }
-  
+
   .ilyasnav__item:hover .ilyasdropdown,
   .ilyasdropdown:hover {
-    display: block;
+      display: block;
   }
-  
+
   .ilyasdropdown__item {
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background 0.3s ease;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.3s ease;
   }
-  
+
 
   .ilyasdropdown__item.highlight {
-    background-color: #fff481; 
-    color: #000000; 
+      background-color: #fff481;
+      color: #000000;
   }
-  
+
   .ilyasdropdown__item:hover {
-    background-color: #eef9ff;
+      background-color: #eef9ff;
   }
-  
+
   .ilyasdropdown__img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
   }
-  
+
   .ilyasdropdown__img:hover {
-    transform: scale(1.1);
+      transform: scale(1.1);
   }
-  
+
   .ilyasnav__search {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
   }
-  
+
   .ilyasmessageBox {
-    text-align: center;
-    padding: 10px;
-    color: red;
-    font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      color: red;
+      font-weight: bold;
   }
-  
-  
-/* Ilyas slut */
-
-
-/* Slet mig senere */
-
-header {
-    z-index: 9999;
-    filter: drop-shadow(0px 5px 10px rgb(0, 0, 0, 0.5));
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.citatboks {
-    background-color: #96C581;
-    color: white;
-}
-
-.citatboks section {
-    display: flex;
-    gap: 0px;
-    flex-direction: column;
-    padding: 10vh 0vh 10vh 0vh;
-}
-
-section {
-    /* ALT INDHOLD HAR SAMME BREDTE, ÆNDRE MIG HVIS DU VIL ÆNDRE HELE BREDTEN */
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-}
-
-header section div {
-    flex: 1;
-    align-content: center;
-}
-
-#HeroSlideShow {
-    background-image: url(images/Ventilen-6041-scaled.webp);
-    background-size: cover;
-    background-position: center;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-#HeroSlideShow section {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    justify-content:first baseline;
-    align-items: start;
-    margin-bottom: 5vh;
-    color: white;
-}
-
-#HeroSlideShow section h1 {
-    margin: 0;
-    display: inline-block;
-    background-color: #E45B26;
-    color: white;
-    padding: 1vh;
-}
-
-#HeroSlideShow section b {
-    margin-right: -1vh;
-    font-weight: bold;
-    background-color: white;
-    color: #E45B26;
-    padding: 1vh;
-
-}
-
-#DeltagEllerFrivilligSektion {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-    background-color: #FDFBEF;
-    padding: 10vh 0 10vh 0;
-    width: 100%;
-}
-
-#DeltagEllerFrivilligSektion__Sektioner img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0% 35%;
-}
-
-#DeltagEllerFrivilligSektion section {
-    display: flex;
-    flex-direction: column;
-}
-
-
-#DeltagEllerFrivilligSektion__Sektioner {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    text-align: left;
-}
-
-#DeltagEllerFrivilligSektion__Sektioner div {
-    flex: 1;
-    background-color: orange;
-    color: white;
-    border-radius: 2vh;
-    padding: 4vh 2vh 4vh 2vh;
-}
-
-#HistorieFraFrivilligSektion {
-    padding: 10vh 0 10vh 0;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-#HistorieFraFrivilligSektion section div {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex: 1;
-}
-
-#HistorieFraFrivilligSektion section>div:nth-child(2) {
-    padding-left: 5vh;
-}
-
-#OmVentilenSektion {
-    width: 100%;
-    background-color: #E45B26;
-    color: white;
-    padding: 10vh 0 10vh 0;
-}
-
-#OmVentilenSektion section {
-    display: flex;
-    flex-direction: column;
-}
-
-#OmVentilenSektion button {
-    width: 30%;
-}
-
-#OmVentilenSektion__Image {
-    background-image: url(images/billederafdeunge.webp);
-    background-size: cover;
-    background-position: 0% 25%;
-    height: 400px;
-    border-radius: 10px;
-}
-
-/* Chat box... */
-#chatbox {
-    padding: .5vh;
-    width: 8vh;
-    height: 8vh;
-    background-color: white;
-    border-radius: 10vh 10vh 0vh 10vh;
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    transition: all cubic-bezier(.81, .15, .47, 1.57) .5s;
-    border: 1px solid gainsboro;
-    
-}
-
-
-#chatbox.chatbox__udvidet {
-    border: 5px solid black;
-    padding: 5vh;
-    width: 80vh;
-    height: 60vh;
-}
-
-#chatbox div {
-    transform: scale(0);
-    display: none;
-}
-
-#chatbox.chatbox__udvidet div {
-    transform: scale(1);
-    display: flex;
-}
-
-#chatbox__chaticon {
-    max-width: 50%;
-    max-height: 50%;
-    margin: auto;
-    display: flex;
-    cursor: pointer;
-}
-
-#chatbox__closeandlogo {
-    height: 10vh;
-    display: none;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-#chatbox__write {
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-}
-
-
-#chatbox input {
-    width: 90%;
-    border: 0px solid;
-    outline: none;
-    padding: 1vh;
-    background-color: gainsboro;
-    border-radius: 1vh 0vh 0vh 1vh;
-
-}
-
-#chatbox__write input {
-    flex: 75%;
-}
-
-
-#chatbox__write button {
-    padding: 2vh;
-    width: 25%;
-    flex: 25%;
-    border-radius: 0vh 1vh 1vh 0vh;
-    cursor: pointer;
-}
-
-#chatbox__write form {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-#chatbox__messagesection {
-    flex: 50%;
-    width: 100%;
-    margin-bottom: 20px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
-
-#chatbox__messagesection::-webkit-scrollbar {
-    width: 0;
-    /* Remove scrollbar width */
-    height: 0;
-    /* Remove scrollbar height */
-}
-
-.chatbox__messagerobot {
-    margin-right: 20px;
-    border-radius: 1.5vh;
-    animation: messagebox 0.5s 1 cubic-bezier(.97,0,.83,.67);
-    display: flex;
-    justify-content: flex-start;
-    text-align: right !important;
-    background-color: #E45B26;
-    padding-right: 2vh;
-    padding-left: 2vh;
-    margin-bottom: 20px;
-    color: white;
-    width: 93%;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-}
-
-.chatbox__messageyou {
-    border-radius: 1.5vh;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    text-align: right !important;
-    background-color: #9300F7;
-    padding-top: 2vh;
-    padding-right: 2vh;
-    padding-left: 2vh;
-    color: white;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    width: 93%;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-}
-
-.chatbox__messagefaq {
-    opacity: 50%;
-    border-radius: 1.5vh;
-    display: flex;
-    text-align: right !important;
-    background-color: rgb(0, 0, 0, 0);
-    border: 2px solid #E45B26;
-    padding-right: 2vh;
-    padding-left: 2vh;
-    color: #E45B26;
-    margin-bottom: 10px;
-    width: 93%;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-}
-
-.chatbox__messageyou span {
-    margin-bottom: -20px;
-    opacity: 75%;
-}
-
-
-@keyframes messagebox {
-    0% {transform: scale(0);}
-    100% {transform: scale(1);}
-}
-
-
-/* Her begynder footer styling */
-
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    /* Gør kolonnerne jævnt fordelt */
-    flex-direction: row;
-    margin: 0 auto;
-    /* Centrerer footeren */
-    padding: 20px;
-    margin-top: 20px;
-}
-
-
-.footer-right {
-    flex: 1;
-    display: flex;
-    gap: 50px;
-    /* Justér afstanden mellem kolonnerne */
-    margin-left: auto;
-    /*Får kolonnerne til at være i højre side af footer */
-}
-
-.footer-column {
-    flex: 1;
-    /* Sørger for at kolonnerne fylder lige meget */
-    /* Forhindrer at de bliver for smalle */
-}
-
-.footer-column p {
-    margin: 2px 0;
-    line-height: 1.5;
-}
-    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-
-    .flip-box-container {
-        justify-content: center;
-        display: flex;
-        gap:100px;/* Afstand mellem kasserne */
-        margin-bottom: 25px;
-
-
-    }.flip-box {
-        background-color: transparent;
-        width: 300px;
-        height: 450px;
-        border: 1px solid #f1f1f1;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
-        overflow: hidden;
-    }
-    
-    /* This container is needed to position the front and back side */
-    .flip-box-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
-    
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    .flip-box:hover .flip-box-inner {
-        transform: rotateY(180deg);
-    } 
-    
-    /* Position the front and back side */
-    .flip-box-front, .flip-box-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
-        backface-visibility: hidden;
-    }
-    
-    /* Style the front side */
-    .flip-box-front {
-        background-color: #EA610F;
-      
-    }
-    
-    /* Style the back side */
-    .flip-box-back {
-        background-color: orange;
-        color: white;
-        transform: rotateY(180deg);
-    }
-
-    .billede  {
-        width: 300px;
-        height: 450px;body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f4f4f4;
-    }
-
-    .flip-box-container {
-        display: flex;
-        width: 300px;
-        overflow: hidden;
-    }
-
-    .flip-box {
-        width: 100px;
-        height: 100px;
-        background-color: #ddd;
-        margin: 5px;
-        text-align: center;
-        line-height: 100px;
-        font-size: 20px;
-        transition: transform 0.5s;
-    }
-  /* Pil-knapper */
-
-      
-    
-      
-    
-      
-   
-
-    
-
-.footer-container {
-    display: flex;  
-    justify-content: flex-end; /* Gør kolonnerne jævnt fordelt */
-    flex-direction: row;
-    margin: 0 auto; /* Centrerer footeren */
-    padding: 20px;
-    margin-top: 20px;
-}
-
-
-.footer-right {
-    display: flex;
-    gap: 50px; /* Justér afstanden mellem kolonnerne */
-    margin-left: auto; /*Får kolonnerne til at være i højre side af footer */
-}
-
-.footer-column {
-    flex: 1; /* Sørger for at kolonnerne fylder lige meget */
-     /* Forhindrer at de bliver for smalle */
-}
-
-.footer-column p {
-    margin: 2px 0;
-    line-height: 1.5;
-}
-
-
-
-
-    }
-
-
-@media (max-width: 900px) {
-    .footer-container {
-        flex-direction: column;
-        /* Skift til kolonne på mindre skærme */
-        text-align: center;
-    }
-
-    .footer-column.left {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .footer-right {
-        flex-direction: column;
-        /* Sæt elementerne under hinanden */
-        gap: 20px;
-        /* Reducér mellemrum */
-    }
-
-    .footer-column {
-        text-align: center;
-        /* Justere tekst til højre */
-    }
-}
+
+
+  /* Ilyas slut */
+
+
+  /* Slet mig senere */
+
+  header {
+      z-index: 9999;
+      filter: drop-shadow(0px 5px 10px rgb(0, 0, 0, 0.5));
+      background-color: white;
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+  }
+
+  .citatboks {
+      background-color: #96C581;
+      color: white;
+  }
+
+  .citatboks section {
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+      padding: 10vh 0vh 10vh 0vh;
+  }
+
+  section {
+      /* ALT INDHOLD HAR SAMME BREDTE, ÆNDRE MIG HVIS DU VIL ÆNDRE HELE BREDTEN */
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+  }
+
+  header section div {
+      flex: 1;
+      align-content: center;
+  }
+
+  #HeroSlideShow {
+      background-image: url(images/Ventilen-6041-scaled.webp);
+      background-size: cover;
+      background-position: center;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+  }
+
+  #HeroSlideShow section {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      justify-content: first baseline;
+      align-items: start;
+      margin-bottom: 5vh;
+      color: white;
+  }
+
+  #HeroSlideShow section h1 {
+      margin: 0;
+      display: inline-block;
+      background-color: #E45B26;
+      color: white;
+      padding: 1vh;
+  }
+
+  #HeroSlideShow section b {
+      margin-right: -1vh;
+      font-weight: bold;
+      background-color: white;
+      color: #E45B26;
+      padding: 1vh;
+
+  }
+
+  #DeltagEllerFrivilligSektion {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      margin: auto;
+      background-color: #FDFBEF;
+      padding: 10vh 0 10vh 0;
+      width: 100%;
+  }
+
+  #DeltagEllerFrivilligSektion__Sektioner img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 0% 35%;
+  }
+
+  #DeltagEllerFrivilligSektion section {
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  #DeltagEllerFrivilligSektion__Sektioner {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      text-align: left;
+  }
+
+  #DeltagEllerFrivilligSektion__Sektioner div {
+      flex: 1;
+      background-color: orange;
+      color: white;
+      border-radius: 2vh;
+      padding: 4vh 2vh 4vh 2vh;
+  }
+
+  #HistorieFraFrivilligSektion {
+      padding: 10vh 0 10vh 0;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+  }
+
+  #HistorieFraFrivilligSektion section div {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      flex: 1;
+  }
+
+  #HistorieFraFrivilligSektion section>div:nth-child(2) {
+      padding-left: 5vh;
+  }
+
+  #OmVentilenSektion {
+      width: 100%;
+      background-color: #E45B26;
+      color: white;
+      padding: 10vh 0 10vh 0;
+  }
+
+  #OmVentilenSektion section {
+      display: flex;
+      flex-direction: column;
+  }
+
+  #OmVentilenSektion button {
+      width: 30%;
+  }
+
+  #OmVentilenSektion__Image {
+      background-image: url(images/billederafdeunge.webp);
+      background-size: cover;
+      background-position: 0% 25%;
+      height: 400px;
+      border-radius: 10px;
+  }
+
+  /* Chat box... */
+  #chatbox {
+      padding: .5vh;
+      width: 8vh;
+      height: 8vh;
+      background-color: white;
+      border-radius: 10vh 10vh 0vh 10vh;
+      position: fixed;
+      right: 5%;
+      bottom: 5%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      transition: all cubic-bezier(.81, .15, .47, 1.57) .5s;
+      border: 1px solid gainsboro;
+
+  }
+
+
+  #chatbox.chatbox__udvidet {
+      border: 5px solid black;
+      padding: 5vh;
+      width: 80vh;
+      height: 60vh;
+  }
+
+  #chatbox div {
+      transform: scale(0);
+      display: none;
+  }
+
+  #chatbox.chatbox__udvidet div {
+      transform: scale(1);
+      display: flex;
+  }
+
+  #chatbox__chaticon {
+      max-width: 50%;
+      max-height: 50%;
+      margin: auto;
+      display: flex;
+      cursor: pointer;
+  }
+
+  #chatbox__closeandlogo {
+      height: 10vh;
+      display: none;
+      justify-content: space-between;
+      margin-bottom: 50px;
+  }
+
+  #chatbox__write {
+      height: 5vh;
+      display: flex;
+      flex-direction: row;
+  }
+
+
+  #chatbox input {
+      width: 90%;
+      border: 0px solid;
+      outline: none;
+      padding: 1vh;
+      background-color: gainsboro;
+      border-radius: 1vh 0vh 0vh 1vh;
+
+  }
+
+  #chatbox__write input {
+      flex: 75%;
+  }
+
+
+  #chatbox__write button {
+      padding: 2vh;
+      width: 25%;
+      flex: 25%;
+      border-radius: 0vh 1vh 1vh 0vh;
+      cursor: pointer;
+  }
+
+  #chatbox__write form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  }
+
+  #chatbox__messagesection {
+      flex: 50%;
+      width: 100%;
+      margin-bottom: 20px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      flex-direction: column;
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-start;
+  }
+
+  #chatbox__messagesection::-webkit-scrollbar {
+      width: 0;
+      /* Remove scrollbar width */
+      height: 0;
+      /* Remove scrollbar height */
+  }
+
+  .chatbox__messagerobot {
+      margin-right: 20px;
+      border-radius: 1.5vh;
+      animation: messagebox 0.5s 1 cubic-bezier(.97, 0, .83, .67);
+      display: flex;
+      justify-content: flex-start;
+      text-align: right !important;
+      background-color: #E45B26;
+      padding-right: 2vh;
+      padding-left: 2vh;
+      margin-bottom: 20px;
+      color: white;
+      width: 93%;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+  }
+
+  .chatbox__messageyou {
+      border-radius: 1.5vh;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      text-align: right !important;
+      background-color: #9300F7;
+      padding-top: 2vh;
+      padding-right: 2vh;
+      padding-left: 2vh;
+      color: white;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      width: 93%;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+  }
+
+  .chatbox__messagefaq {
+      opacity: 50%;
+      border-radius: 1.5vh;
+      display: flex;
+      text-align: right !important;
+      background-color: rgb(0, 0, 0, 0);
+      border: 2px solid #E45B26;
+      padding-right: 2vh;
+      padding-left: 2vh;
+      color: #E45B26;
+      margin-bottom: 10px;
+      width: 93%;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+  }
+
+  .chatbox__messageyou span {
+      margin-bottom: -20px;
+      opacity: 75%;
+  }
+
+
+  @keyframes messagebox {
+      0% {
+          transform: scale(0);
+      }
+
+      100% {
+          transform: scale(1);
+      }
+  }
+
+
+  /* Her begynder footer styling */
+
+
+  .footer-container {
+      display: flex;
+      justify-content: space-between;
+      /* Gør kolonnerne jævnt fordelt */
+      flex-direction: row;
+      margin: 0 auto;
+      /* Centrerer footeren */
+      padding: 20px;
+      margin-top: 20px;
+  }
+
+
+  .footer-right {
+      flex: 1;
+      display: flex;
+      gap: 50px;
+      /* Justér afstanden mellem kolonnerne */
+      margin-left: auto;
+      /*Får kolonnerne til at være i højre side af footer */
+  }
+
+  .footer-column {
+      flex: 1;
+      /* Sørger for at kolonnerne fylder lige meget */
+      /* Forhindrer at de bliver for smalle */
+  }
+
+  .footer-column p {
+      margin: 2px 0;
+      line-height: 1.5;
+  }
+
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+  .flip-box-container {
+      background-color: gainsboro;
+      padding: 10vh 0vh 10vh 0vh;
+      justify-content: center;
+      display: flex;
+      gap: 100px;
+      /* Afstand mellem kasserne */
+      margin-bottom: 25px;
+
+
+  }
+
+  .flip-box {
+      background-color: transparent;
+      width: 300px;
+      height: 450px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px;
+      /* Remove this if you don't want the 3D effect */
+      overflow: hidden;
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-box-front,
+  .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      /* Safari */
+      backface-visibility: hidden;
+  }
+
+  /* Style the front side */
+  .flip-box-front {
+      background-color: #EA610F;
+
+  }
+
+  /* Style the back side */
+  .flip-box-back {
+      background-color: orange;
+      color: white;
+      transform: rotateY(180deg);
+  }
+
+  .billede {
+      width: 300px;
+      height: 450px;
+
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f4f4f4;
+      }
+
+      .flip-box-container {
+          display: flex;
+          width: 300px;
+          overflow: hidden;
+      }
+
+      .flip-box {
+          width: 100px;
+          height: 100px;
+          background-color: #ddd;
+          margin: 5px;
+          text-align: center;
+          line-height: 100px;
+          font-size: 20px;
+          transition: transform 0.5s;
+      }
+
+      /* Pil-knapper */
+
+
+
+
+
+
+
+      .footer-container {
+          display: flex;
+          justify-content: flex-end;
+          /* Gør kolonnerne jævnt fordelt */
+          flex-direction: row;
+          margin: 0 auto;
+          /* Centrerer footeren */
+          padding: 20px;
+          margin-top: 20px;
+      }
+
+
+      .footer-right {
+          display: flex;
+          gap: 50px;
+          /* Justér afstanden mellem kolonnerne */
+          margin-left: auto;
+          /*Får kolonnerne til at være i højre side af footer */
+      }
+
+      .footer-column {
+          flex: 1;
+          /* Sørger for at kolonnerne fylder lige meget */
+          /* Forhindrer at de bliver for smalle */
+      }
+
+      .footer-column p {
+          margin: 2px 0;
+          line-height: 1.5;
+      }
+
+
+
+
+
+  @media (max-width: 900px) {
+
+
+      .footer-container {
+          flex-direction: column;
+          /* Skift til kolonne på mindre skærme */
+          text-align: center;
+      }
+
+      .footer-column.left {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      .footer-right {
+          flex-direction: column;
+          /* Sæt elementerne under hinanden */
+          gap: 20px;
+          /* Reducér mellemrum */
+      }
+
+      .footer-column {
+          text-align: center;
+          /* Justere tekst til højre */
+      }
+  }}
