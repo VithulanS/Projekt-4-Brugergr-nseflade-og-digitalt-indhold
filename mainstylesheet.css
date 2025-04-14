@@ -197,12 +197,37 @@ svg {
 
 /*Pernille style slutter her for FAQ */
 
-.videosektion section{
+* {border: 1px dotted rgb(255, 0, 255, 0.5);}
+
+.videosektion section {
     display: flex;
     flex-direction: column;
 }
 
+.videosektion section div {
+    flex: 1;
+}
 
+.videosektion__flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.videosektion_video__one {
+    background-image: url(images/video1.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.videosektion_video__two {
+    background-image: url(images/video2.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 20px;
+}
 
 header {
     z-index: 9999;
