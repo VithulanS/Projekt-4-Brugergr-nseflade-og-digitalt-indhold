@@ -551,13 +551,13 @@ header section div {
     
     /* Style the front side */
     .flip-box-front {
-        background-color: orange;
+        background-color: #EA610F;
       
     }
     
     /* Style the back side */
     .flip-box-back {
-        background-color: #EA610F;
+        background-color: orange;
         color: white;
         transform: rotateY(180deg);
     }
