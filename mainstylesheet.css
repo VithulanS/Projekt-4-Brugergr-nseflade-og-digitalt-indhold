@@ -158,113 +158,8 @@ svg {
   
 /* Ilyas slut */
 
-/*Pernille style starter her for FAQ */
 
-.faq-div {
-    background-color: #FFFFFF;
-}
-
-.faq-section {
-    padding: 10vh 0vh 10vh 0vh;
-    flex-direction: column;
-}
-
-.question {
-    cursor: pointer;
-}
-
-.faq-container {
-    background-color: #E45B26;
-    border-radius: 20px;
-    padding: 10px 30px 10px 30px;
-    margin-bottom: 20px;
-    transition: opacity 0.2s ease 
-}
-
-.faq-container:hover:not(.active) {
-    background: #f6a484; /*farve når musen holdes hen over boksen */
-}
-
-.faq-container.active {
-    background-color: #E45B26;
-}
-
-.answer {
-    display: none;
-    margin-top: 10px; /*afstand fra tekst og overskrift*/
-    color: #000000; /*farve på paragraph teksten inden i boksen*/
-}
-
-/*Pernille style slutter her for FAQ */
-
-
-
-.videosektion section {
-    padding: 10vh 0vh 10vh 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.videosektion section div {
-    flex: 1;
-}
-
-.videosektion__flexbox {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.videosektion_video__one {
-    background-image: url(images/video1.png);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    margin-bottom: 20px;
-}
-.videosektion_video__two {
-    background-image: url(images/video2.png);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    margin-bottom: 20px;
-}
-
-.frivilligemuligheder {
-    background-color: #FDFBEF;
-}
-
-.frivilligemuligheder section {
-    padding: 10vh 0vh 10vh 0vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.frivilligemuligheder section img {
-    width: 100%;
-    height: 300px;
-    max-height: 300px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.frivilligemuligheder__flexbox {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.citatboks {
-    background-color: #96C581;
-    color: white;
-}
-
-.citatboks section {
-    display: flex;
-    gap: 0px;
-    flex-direction: column;
-    padding: 10vh 0vh 10vh 0vh;
-}
+/* Slet mig senere */
 
 header {
     z-index: 9999;
@@ -323,10 +218,7 @@ header section div {
     background-color: white;
     color: #E45B26;
     padding: 1vh;
-}
 
-.HeroSlideShowTwo {
-    background-image: url(images/IMG_6081.webp) !important;
 }
 
 #DeltagEllerFrivilligSektion {
@@ -581,13 +473,47 @@ header section div {
 }
 
 
+/* Her begynder footer styling */
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* Gør kolonnerne jævnt fordelt */
+    flex-direction: row;
+    margin: 0 auto;
+    /* Centrerer footeren */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    /* Justér afstanden mellem kolonnerne */
+    margin-left: auto;
+    /*Får kolonnerne til at være i højre side af footer */
+}
+
+.footer-column {
+    flex: 1;
+    /* Sørger for at kolonnerne fylder lige meget */
+    /* Forhindrer at de bliver for smalle */
+}
+
+.footer-column p {
+    margin: 2px 0;
+    line-height: 1.5;
+}
     /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
     .flip-box-container {
-        padding: 10vh 0vh 10vh 0vh;
         justify-content: center;
         display: flex;
-        gap: 20px; /* Afstand mellem kasserne */
+        gap:100px;/* Afstand mellem kasserne */
+        margin-bottom: 25px;
 
 
     }.flip-box {
@@ -625,8 +551,8 @@ header section div {
     
     /* Style the front side */
     .flip-box-front {
-        background-color: #c8b5b5;
-        color: black;
+        background-color: orange;
+      
     }
     
     /* Style the back side */
@@ -662,9 +588,17 @@ header section div {
         font-size: 20px;
         transition: transform 0.5s;
     }
-    /* Prikker (dots) */
+  /* Pil-knapper */
+
+      
+    
+      
+    
+      
    
 
+
+    }
 
 
 @media (max-width: 900px) {
@@ -690,4 +624,4 @@ header section div {
         text-align: center;
         /* Justere tekst til højre */
     }
-}}
+}
