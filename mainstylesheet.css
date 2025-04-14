@@ -172,6 +172,18 @@ header {
 
 }
 
+.citatboks {
+    background-color: #96C581;
+    color: white;
+}
+
+.citatboks section {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    padding: 10vh 0vh 10vh 0vh;
+}
+
 section {
     /* ALT INDHOLD HAR SAMME BREDTE, ÆNDRE MIG HVIS DU VIL ÆNDRE HELE BREDTEN */
     width: 75%;
