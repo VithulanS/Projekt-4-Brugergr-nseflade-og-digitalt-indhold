@@ -158,8 +158,51 @@ svg {
   
 /* Ilyas slut */
 
+/*Pernille style starter her for FAQ */
 
-/* Slet mig senere */
+.faq-div {
+    background-color: #FFFFFF;
+}
+
+.faq-section {
+    padding: 10vh 0vh 10vh 0vh;
+    flex-direction: column;
+}
+
+.question {
+    cursor: pointer;
+}
+
+.faq-container {
+    background-color: #E45B26;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 20px;
+    transition: opacity 0.2s ease 
+}
+
+.faq-container:hover:not(.active) {
+    background: #f6a484; /*farve når musen holdes hen over boksen */
+}
+
+.faq-container.active {
+    background-color: #E45B26;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px; /*afstand fra tekst og overskrift*/
+    color: #000000; /*farve på paragraph teksten inden i boksen*/
+}
+
+/*Pernille style slutter her for FAQ */
+
+.videosektion section{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 header {
     z-index: 9999;
@@ -223,8 +266,6 @@ header section div {
 .HeroSlideShowTwo {
     background-image: url(images/IMG_6081.webp) !important;
 }
-
-
 
 #DeltagEllerFrivilligSektion {
     text-align: center;
