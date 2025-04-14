@@ -218,8 +218,13 @@ header section div {
     background-color: white;
     color: #E45B26;
     padding: 1vh;
-
 }
+
+.HeroSlideShowTwo {
+    background-image: url(images/IMG_6081.webp) !important;
+}
+
+
 
 #DeltagEllerFrivilligSektion {
     text-align: center;
