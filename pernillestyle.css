@@ -1,0 +1,112 @@
+/* Kommentar */
+/* Style Style REGLER */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+p { /* Brødtekst regl */
+    font-family: "Noto Serif SC", serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+h1 { /* Overskrift regl */
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h2 { /* Mellemrubrik til brødteskt regl */
+    font-family: "Scada", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 20px 60px 20px 60px;
+    border-radius: 10px;
+    background-color: #9300F7;
+    color: white;
+}
+
+
+img {max-width: 100%; max-height: 100%; border-radius: 10px;}
+svg {max-width: 100%; max-height: 100%;}
+
+section { /* ALT INDHOLD HAR SAMME BREDTE, ÆNDRE MIG HVIS DU VIL ÆNDRE HELE BREDTEN */
+
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+}
+
+/*Pernille style starter her for FAQ */
+
+.faq-div {
+    background-color: #FFFFFF;
+}
+
+.faq-section {
+    flex-direction: column;
+    padding: 2px;
+    
+}
+
+.question {
+    cursor: pointer;
+}
+
+.faq-container {
+    background-color: #E45B26;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 20px;
+    transition: opacity 0.2s ease 
+}
+
+.faq-container:hover:not(.active) {
+    background: #f6a484; /*farve når musen holdes hen over boksen */
+}
+
+.faq-container.active {
+    background-color: #E45B26;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px; /*afstand fra tekst og overskrift*/
+    color: #000000; /*farve på paragraph teksten inden i boksen*/
+}
+
+/*Pernille style slutter her for FAQ */
+
+
+.footer-container {
+    display: flex;  
+    justify-content: flex-end; /* Gør kolonnerne jævnt fordelt */
+    flex-direction: row;
+    margin: 0 auto; /* Centrerer footeren */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.footer-right {
+    display: flex;
+    gap: 50px; /* Justér afstanden mellem kolonnerne */
+    margin-left: auto; /*Får kolonnerne til at være i højre side af footer */
+}
+
+.footer-column {
+    flex: 1; /* Sørger for at kolonnerne fylder lige meget */
+     /* Forhindrer at de bliver for smalle */
+}
+
+.footer-column p {
+    margin: 2px 0;
+    line-height: 1.5;
+}
+
