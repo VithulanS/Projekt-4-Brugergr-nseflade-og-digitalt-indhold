@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script defer src="vithujava.js"></script>
     <script defer src="chatbox.js"></script>
     <script src="ilyas.js" defer></script>
     <meta charset="UTF-8">
@@ -117,7 +118,8 @@
         </section>
     </div>
 
-    <div id="chatbox">
+       <!-- Jakob start -->
+       <div id="chatbox">
         <img src="images/chatsvg.svg" id="chatbox__chaticon" onclick="openUp()">
         <div id="chatbox__closeandlogo">
             <a onclick="openUp()">X</a>
@@ -130,9 +132,10 @@
             <form onsubmit="addMessageYou(event)">
                 <input type="text" id="chatbox__writeinput" placeholder="Skriv her..." />
                 <button type="submit">Send</button>
-              </form>              
+            </form>
         </div>
     </div>
+    <!-- Jakob Slut -->
 
     <footer class="footer">
         <section class="footer-container">
